@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(AS1.jpg); /* Light grey background for contrast */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height for center alignment */
+        }
+
+        .login-container {
+            background-color: rgba(181, 161, 161, 0.119); /* White background with opacity for form */
+            background: rgba(0, 0, 0, 0.119); /* White background with opacity for form */
+            -webkit-backdrop-filter: blur(10px); /* Blur effect for background for Safari */
+            backdrop-filter: blur(2px); /* Blur effect for background */
+            padding: 20px; 
+            border:2px solid #5a5a5a48;/* Light grey border */
+            border-radius: 2rem; /* Rounded corners for the container */
+            width: 300px; /* Fixed width */
+        }
+        .login-container:hover{
+            transform:translateY(5px);
+            transition: 0.5em;
+            box-shadow: #999696;
+        }
+        
+
+        h2 {
+            text-align: center; /* Center the title */
+            margin-bottom: 20px; /* Space below the title */
+            color: #ffffff; /* Dark color for text */
+        }
+
+      
+
+        .input-group {
+            margin-bottom: 15px; /* Space between input fields */
+        }
+
+        label {
+            display: block; /* Make labels block elements */
+            margin-bottom: 5px; /* Space below label */
+            color: #ffffff; /* Dark grey for labels */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            background-color:transparent;
+            width: 100%; /* Full width for inputs */
+            padding: 10px; /* Padding for comfort */
+            border: 2px solid #5a5a5a48; /* Light grey border */
+            border-radius: 4px; /* Rounded corners for inputs */
+            color:#ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #3300ff; /* Bootstrap green */
+            color: rgb(255, 255, 255); /* White text */
+            border: none; /* No border */
+            padding: 10px; /* Padding for button */
+            border-radius: 4px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 100%; /* Full width for button */
+            font-size: 16px; /* Larger text */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2b2dbbac; /* Darker green on hover */
+            color:#000000;
+        }
+
+        .footer {
+            text-align: center; /* Center footer text */
+            margin-top: 20px; /* Space above footer */
+            font-size: 14px; /* Smaller text */
+            color: #ffffff; /* Light grey for footer */
+        }
+
+        .footer a {
+            color: #ffffff; /* Green color for links */
+            text-decoration: none; /* No underline for links */
+        }
+
+        .footer a:hover {
+            color:#00a6ff;
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form action="fd&fp.html" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="LOGIN">
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
